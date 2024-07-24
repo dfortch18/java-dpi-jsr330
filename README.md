@@ -3,13 +3,13 @@
 [![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)](https://www.java.com/es/)
 [![Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)](https://maven.apache.org/)
 
-Un pequeño ejemplo de como usar inyección de dependencias en Java mediante la API `jakarta.inject` y la implementación [**Weld SE**](https://weld.cdi-spec.org/).
+A small example of how to use dependency injection in Java using the `jakarta.inject` API and the [**Weld SE**](https://weld.cdi-spec.org/) implementation.
 
-[**Weld SE**](https://weld.cdi-spec.org/) es una implementación del CDI (Context and Dependency Injection) en Java SE. La especificación CDI se basa en JSR-330 para la inyección de dependencias, que permite inyectar dependencias en objetos sin necesidad de crear instancias explícitamente en el código.
+[**Weld SE**](https://weld.cdi-spec.org/) is an implementation of CDI (Context and Dependency Injection) in Java SE. The CDI specification is based on JSR-330 for dependency injection, which allows injecting dependencies into objects without the need to explicitly create instances in the code.
 
-## Componentes
+## Components
 
-- **`HelloWorldPrinter`:** Interfaz que define el metodo `print` para imprimir un Hello World
-- **`HelloWorldPrinterCapitalize`:** Implementación de `HelloWorldPrinter` que imprime el Hello World en formato de capitalización.
-- **`HelloWorldPrinterUppercase`:** Implementación de `HelloWorldPrinter` que imprime el Hello World en formato de mayúsculas.
-- **`HelloWorldClient`:** Cliente que inyecta todas las implementaciones de `HelloWorldPrinter` y llama el metodo `print` de cada una.
+- **`HelloWorldPrinter`:** Interface that defines the `print` method to print a Hello World
+- **`HelloWorldPrinterCapitalize`:** Implementation of `HelloWorldPrinter` that prints Hello World in capitalized format.
+- **`HelloWorldPrinterUppercase`:** Implementation of `HelloWorldPrinter` that prints Hello World in uppercase format.
+- **`HelloWorldClient`:** Client that injects all implementations of `HelloWorldPrinter` and calls the `print` method of each.
