@@ -9,6 +9,8 @@ A small example of how to use dependency injection in Java using the `jakarta.in
 
 ## Components
 
+![](./assets/java-dpi-jsr330.png)
+
 - **`HelloWorldPrinter`:** Interface that defines the `print` method to print a Hello World
 - **`HelloWorldPrinterCapitalize`:** Implementation of `HelloWorldPrinter` that prints Hello World in capitalized format.
 - **`HelloWorldPrinterUppercase`:** Implementation of `HelloWorldPrinter` that prints Hello World in uppercase format.
